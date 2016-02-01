@@ -1,0 +1,25 @@
+//Miguel Sandoval
+#include <iostream>
+using namespace std;
+
+int main () {
+  float x, y, addition, substraction, multiplication, division;
+  cout << "Write the first float number " <<endl;
+  cin>> x;
+  cout << "Write the second float number " <<endl;
+  cin>> y;
+
+  cout <<"The addition of the two float numbers is: ";
+  cout << x + y << endl;
+
+  cout <<"The subtraction os the two float numbers is: ";
+  cout << x - y << endl;
+
+  cout <<"The multiplication of the two float numbers is: ";
+  cout << x * y << endl;
+
+  cout <<"The division of the two float numbers is: ";
+  cout << x / y << endl;
+
+  return 0;
+}
