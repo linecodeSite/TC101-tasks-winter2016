@@ -1,0 +1,21 @@
+//Miguel Sandoval
+#include <iostream>
+using namespace std;
+
+int main () {
+  int x;
+  int y;
+
+  cout <<"Enter the first number"<< endl;
+  cin >> x;
+  cout <<"Enter the second number"<< endl;
+  cin >> y;
+
+  cout <<"The multiplication of the two numbers is:"<< endl;
+  cout << x * y << endl;
+  cout <<"The integer division of the two numbers is:"<< endl;
+  cout << x / y << endl;
+  cout << "The reminder of the division  x / y is:" << (x % y) << endl;
+
+  return 0;
+}
