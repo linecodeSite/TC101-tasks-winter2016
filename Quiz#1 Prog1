@@ -1,0 +1,17 @@
+//Miguel Sandoval
+#include <iostream>
+using namespace std;
+
+int main () {
+  float r, h, v, pi;
+  pi = 3.1416;
+  cout <<"Type the radius of the cylinder" <<endl;
+  cin>> r;
+  cout <<"Now type the  height of the cylinder" <<endl;
+  cin >> h;
+  v = h * pi * r*(r);
+  cout <<"The volume of the cylinder is: " <<endl;
+  cout << v <<endl;
+
+  return 0;
+}
