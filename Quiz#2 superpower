@@ -1,0 +1,26 @@
+//Miguel Sandoval
+#include <iostream>
+using namespace std;
+
+int superpower(int x, int y){
+  int a, save, count=1;
+  a=x;
+  do {
+    save=x*a;
+    x=save;
+    count++;
+  } while(count!=y);
+  return save;
+}
+
+int main(){
+  int a,x,y,count,save;
+cout<<"We are going to raise one number to an exponential, please type the number. " <<endl;
+cin>>x;
+cout<<"Type the exponential number. " <<endl;
+cin>>y;
+save=superpower(x,y);
+cout<<"The result is: "<<save <<endl;
+
+return 0;
+}
