@@ -1,0 +1,25 @@
+//Miguel Sandoval
+#include <iostream>
+using namespace std;
+
+int x;
+int y;
+
+int main ()
+{
+  cout <<"Type an integer number" <<endl;
+  cin >>x;
+  cout <<"Type the second integer number" <<endl;
+  cin >>y;
+
+  cout <<"The difference of the two numbers is= ";
+  cout << x-y <<endl;
+  cout <<"The product of the two numbers is= ";
+  cout << x+y <<endl;
+  cout <<"The integer based division of the two numbers is= ";
+  cout << x/y <<endl;
+  cout <<"The reminder of integer division of the two numbers is= ";
+  cout << x%y <<endl;
+
+return 0;
+}
