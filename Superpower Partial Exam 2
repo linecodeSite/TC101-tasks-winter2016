@@ -1,0 +1,30 @@
+//Miguel Sandoval
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int superpower(int a, int b)
+{
+    int z=1, number=1;
+    do {
+        number=number*a;
+        z=z+1;
+
+        }
+    while (z<=b);
+    return number;
+    }
+
+int main () {
+int n1, n2, x;
+cout <<"Type the first number:  \n";
+cin >> n1;
+cout <<"Type the second number: \n";
+cin >> n2;
+x=superpower(n1,n2);
+cout <<"The result of the first number raised to the power of the second is: " <<x<<endl;
+
+return 0;
+
+}
