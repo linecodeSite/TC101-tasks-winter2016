@@ -1,0 +1,37 @@
+//Miguel Sandoval
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+string word, fin;
+
+string is_palindrome(string word)
+
+{
+string backwards;
+cout << "Type a word: \n";
+cin >> word;
+
+int large = word.length();
+for (int x = large - 1; x >= 0; x--)
+
+{
+backwards += word[x];
+}
+
+if (backwards == word)
+{
+fin = "Your word is a palindrome";
+}
+
+else
+fin = "Your word is not a palindrome";
+return fin;
+}
+int main()
+{
+cout << is_palindrome(fin);
+}
