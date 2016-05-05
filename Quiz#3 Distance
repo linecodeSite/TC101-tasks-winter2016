@@ -1,0 +1,25 @@
+// Miguel Sandoval
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+double distance (double x1, double y1, double x2, double y2) {
+double a=pow((x2-x1),2);
+double b=pow((y2-y1),2);
+double raiz=sqrt(a + b);
+return raiz;
+}
+int main(){
+  double x1, y1, x2, y2;
+  cout<<"We will calculate the distance between 2 points."<<endl;
+  cout<<"Type the value x1: ";
+  cin>>x1;
+  cout<<"Type the value y1: ";
+  cin>>y1;
+  cout<<"Type the value x2: ";
+  cin>>x2;
+  cout<<"Type the value y2: ";
+  cin>>y2;
+  cout<<"The distance between those points is: "<<distance(x1, y1, x2, y2);
+  return 0.0;
+}
