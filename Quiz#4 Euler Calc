@@ -1,0 +1,36 @@
+//Miguel Sandoval
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int factorial(int x)
+{
+  if (x == 1 || x == 0)
+  {
+    return 1;
+  }
+  else
+  {
+    return x * factorial(x - 1);
+  }
+}
+float euler_calc(float y)
+{
+  float x = 0.0, answer = 0.0;
+  do
+  {
+    answer += 1.0/(factorial(x));
+    x = x + 1;
+  }
+
+while(x <= y);
+  return answer;
+}
+int main()
+{
+  float y, answer, x = 0.0;
+  cout << "Type a number: \n ";
+  cin >> y;
+  cout << "The answer for the euler numbe is " << euler_calc(y) << endl;
+}
