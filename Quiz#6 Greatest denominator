@@ -1,0 +1,28 @@
+// Miguel Sandoval
+
+#include <iostream>
+using namespace std;
+
+int mcd(int x, int y){
+    int r;
+    if (x==0){
+        return x;
+    }
+    while (y!=0){
+        r= y;
+        y= x%y;
+        x= r;
+    }
+    return r;
+}
+
+int main (){
+    int x,y;
+    cout<<"Type a number: ";
+    cin>>x;
+    cout<<"Type another number: ";
+    cin>>y;
+    cout<<"The greatest common denominator of (" <<x <<" y " <<y <<") is = " <<mcd(x,y)<<endl;
+
+    return 0;
+}
